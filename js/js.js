@@ -1,5 +1,6 @@
-const title = document.querySelector("h1");
+const title = document.querySelector(".title");
 
-title.addEventListener("click", function(){
-   this.textContent = "Yay!!"; 
+title.addEventListener("click", function(e){
+    console.log(e);
+   e.target.textContent = "Yay!!"; 
 });
